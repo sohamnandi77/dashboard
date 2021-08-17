@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ? Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- # If content is set to yes, the web application runs in full-screen mode; otherwise, it does not -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Dashboard</title>
+    <!-- ? Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- ? Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- ? Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ? CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- ? Sidebar -->
+      <div class="sidebar">
+        <div class="side-navbar">
+          <div class="mobile-view">
+            <div class="hamburger">
+              <div></div>
+            </div>
+            <div class="profile navbar-brand">
+              <div class="user-img">
+                <img src="svg/profile.svg" alt="profile.svg" />
+              </div>
+              <div class="user-info">
+                <div class="username">Allie Simon</div>
+                <div class="email">simon@gmail.com</div>
+              </div>
+            </div>
+            <img
+              class="down-arrow-bg-grey"
+              src="svg/down-arrow-Bg-grey.svg"
+              alt="down-arrow-Bg-grey.svg"
+            />
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <img class="pe-3" src="svg/dashboard.svg" alt="dashboard.svg" />
+              <a class="nav-link active" aria-current="page" href="#"
+                >Dasboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <img class="pe-3" src="svg/reviews.svg" alt="reviews.svg" />
+              <a class="nav-link" href="#">Reviews</a>
+              <img
+                id="down-arrow"
+                src="svg/down-arrow.svg"
+                alt="down-arrow.svg"
+              />
+            </li>
+            <li class="nav-item">
+              <img class="pe-3" src="svg/customer.svg" alt="customer.svg" />
+              <a class="nav-link" href="#">Customers</a>
+              <img
+                id="down-arrow"
+                src="svg/down-arrow.svg"
+                alt="down-arrow.svg"
+              />
+            </li>
+            <li class="nav-item">
+              <img
+                class="pe-3"
+                src="svg/invitations.svg"
+                alt="invitations.svg"
+              />
+              <a class="nav-link" href="#">Invitations</a>
+              <img
+                id="down-arrow"
+                src="svg/down-arrow.svg"
+                alt="down-arrow.svg"
+              />
+            </li>
+            <li class="nav-item">
+              <img class="pe-3" src="svg/widgets.svg" alt="widgets.svg" />
+              <a class="nav-link" href="#">Widgets</a>
+              <img
+                id="down-arrow"
+                src="svg/down-arrow.svg"
+                alt="down-arrow.svg"
+              />
+            </li>
+            <li class="nav-item">
+              <img
+                class="pe-3"
+                src="svg/landingPage.svg"
+                alt="landingPage.svg"
+              />
+              <a class="nav-link" href="#">Landing Page</a>
+              <img
+                id="down-arrow"
+                src="svg/down-arrow.svg"
+                alt="down-arrow.svg"
+              />
+            </li>
+            <li class="nav-item">
+              <img class="pe-3" src="svg/config.svg" alt="config.svg" />
+              <a class="nav-link" href="#">Configuration</a>
+              <img
+                id="down-arrow"
+                src="svg/down-arrow.svg"
+                alt="down-arrow.svg"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ! Sidebar -->
+
+      <!-- ? Main Container -->
+      <div class="container-fluid main-container">
+        <!-- ? Top Nav-bar -->
+        <div class="row top-nav">
+          <div class="col-3 col-left top-nav-left">
+            <div class="nav-links month-dropdown">
+              <img src="svg/calender.svg" alt="calender.svg" />
+              <span class="month">Month</span>
+              <img
+                class="down-arrow"
+                src="svg/down-arrow-grey.svg"
+                alt="down-arrow-grey.svg"
+              />
+            </div>
+            <div class="nav-links filter">
+              <img src="svg/filter.svg" alt="filter" />
+            </div>
+          </div>
+          <div class="col-9 col-right top-nav-right">
+            <div class="nav-links notification">
+              <img
+                class="bell-icon"
+                src="svg/notification.svg"
+                alt="notification.svg"
+              />
+              <img class="red-dot" src="svg/red-dot.svg" alt="red dot" />
+            </div>
+            <div class="nav-links share">
+              <img src="svg/share.svg" alt="share.svg" />
+            </div>
+            <div class="nav-links location">
+              <img src="svg/location.svg" alt="location.svg" />
+            </div>
+          </div>
+        </div>
+        <!-- ! Top Nav-bar -->
+        <!-- ? Statistics -->
+        <div class="row stats">
+          <div class="col-3 col-left stats-left">
+            <div class="card card-width">
+              <div class="card-body">
+                <div class="card-head">
+                  <h6 class="card-title">Overall Statistics</h6>
+                  <img src="svg/right-arrow.svg" alt="right-arrow.svg" />
+                </div>
+                <div class="card-mid">
+                  <div class="rating">
+                    <div class="rating-text">5.0</div>
+                    <div class="rating-title">Rating</div>
+                  </div>
+                  <div class="reviews">
+                    <div class="reviews-text">70</div>
+                    <div class="reviews-title">Reviews</div>
+                  </div>
+                </div>
+                <div class="card-end">
+                  <img
+                    class="img-fluid"
+                    src="svg/circle.svg"
+                    alt="circle.svg"
+                  />
+                  <div class="stars">
+                    <div class="star-yellow">
+                      <i style="color: #ffc935" class="bi bi-star-fill"></i>
+                      <div class="star-rating">
+                        <span class="star-rating-num">5</span>
+                        <span class="star-rating-deno">/30</span>
+                      </div>
+                    </div>
+                    <div class="star-blue">
+                      <i style="color: #58d0ff" class="bi bi-star-fill"></i>
+                      <div class="star-rating">
+                        <span class="star-rating-num">4</span>
+                        <span class="star-rating-deno">/30</span>
+                      </div>
+                    </div>
+                    <div class="star-purple">
+                      <i style="color: #8479ff" class="bi bi-star-fill"></i>
+                      <div class="star-rating">
+                        <span class="star-rating-num">3</span>
+                        <span class="star-rating-deno">/30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-right stats-right">
+            <div class="card graph">
+              <div class="card-body">
+                <div class="card-head">
+                  <h6 class="avg-rating">Average rating</h6>
+                  <h6 class="avg-reviews active">Average reviews</h6>
+                </div>
+                <div class="graph-img">
+                  <img
+                    class="img-fluid graph-mobile"
+                    src="svg/graph-mobile.svg"
+                    alt="graph-mobile.svg"
+                  />
+                  <img
+                    class="img-fluid graph-desktop"
+                    src="svg/graph.svg"
+                    alt="graph.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Statistics -->
+
+        <!-- ? Insights -->
+        <div class="row insights">
+          <div class="col-3 col-left card-size">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="insights-title card-title">INVITES SENT</h5>
+                <h6 class="card-mid">
+                  <img src="svg/message.svg" alt="message.svg" />
+                  <div class="insights-text invites-text">2</div>
+                </h6>
+                <p class="card-text">
+                  <a href="#">See customers</a> that haven't been sent an invite
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-right all-card">
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="insights-title card-title">CLICK RATE</h5>
+                    <h6 class="card-mid">
+                      <img src="svg/cursor.svg" alt="cursor.svg" />
+                      <div class="insights-text click-text">1.0%</div>
+                    </h6>
+                    <p class="card-text">
+                      <a href="#">See customers</a> that haven’t clicked the
+                      review invite link
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="insights-title card-title">REVIEWS</h5>
+                    <h6 class="card-mid">
+                      <img src="svg/chat.svg" alt="chat.svg" />
+                      <div class="insights-text reviews-text">40</div>
+                    </h6>
+                    <p class="card-text">
+                      <a href="#">See all customers</a> that leaved the reviews
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="insights-title card-title">RESPONSE RATE</h5>
+                    <h6 class="card-mid">
+                      <img src="svg/response.svg" alt="response.svg" />
+                      <div class="insights-text response-text">0.0%</div>
+                    </h6>
+                    <p class="card-text">
+                      <a href="#">See reviews</a> which haven’t been responded
+                      to
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 card-size hide">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="insights-title card-title">CLICK RATE</h5>
+                <h6 class="card-mid">
+                  <img src="svg/cursor.svg" alt="cursor.svg" />
+                  <div class="insights-text click-text">1.0%</div>
+                </h6>
+                <p class="card-text">
+                  <a href="#">See customers</a> that haven’t clicked the review
+                  invite link
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 card-size hide">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="insights-title card-title">REVIEWS</h5>
+                <h6 class="card-mid">
+                  <img src="svg/chat.svg" alt="chat.svg" />
+                  <div class="insights-text reviews-text">40</div>
+                </h6>
+                <p class="card-text">
+                  <a href="#">See all customers</a> that leaved the reviews
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 card-size hide">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="insights-title card-title">RESPONSE RATE</h5>
+                <h6 class="card-mid">
+                  <img src="svg/response.svg" alt="response.svg" />
+                  <div class="insights-text response-text">0.0%</div>
+                </h6>
+                <p class="card-text">
+                  <a href="#">See reviews</a> which haven’t been responded to
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Insights -->
+
+        <!-- ? Social Media Handles -->
+        <div class="row social-row">
+          <div class="col-4 card-size">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title card-head">
+                  <img class="img-fluid" src="svg/yelp.svg" alt="yelp.svg" />
+                  <div class="social">
+                    <div class="social-title">Yelp</div>
+                    <div class="social-rating-row">
+                      <div class="social-rating-text">5.0</div>
+                      <div class="social-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="social-reviews">40 reviews</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-end">
+                  <div class="row sliders">
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 50%; background-color: #ffc935"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">5/30</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 10%; background-color: #58d0ff"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">4/2</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 25%; background-color: #8479ff"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">3/8</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 5%; background-color: #ff8c23"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">2/0</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 5%; background-color: #ff6161"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">1/0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 card-size">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title card-head">
+                  <img class="img-fluid" src="svg/fb.svg" alt="fb.svg" />
+                  <div class="social">
+                    <div class="social-title">Facebook</div>
+                    <div class="social-rating-row">
+                      <div class="social-rating-text">4.0</div>
+                      <div class="social-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill grey"></i>
+                      </div>
+                      <div class="social-reviews">40 reviews</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-end">
+                  <div class="row sliders">
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 50%; background-color: #ffc935"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">5/30</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 10%; background-color: #58d0ff"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">4/2</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 25%; background-color: #8479ff"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">3/8</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 5%; background-color: #ff8c23"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">2/0</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 5%; background-color: #ff6161"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">1/0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 card-size">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title card-head">
+                  <img
+                    class="img-fluid"
+                    src="svg/twitter.svg"
+                    alt="twitter.svg"
+                  />
+                  <div class="social">
+                    <div class="social-title">Twitter</div>
+                    <div class="social-rating-row">
+                      <div class="social-rating-text">3.0</div>
+                      <div class="social-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill grey"></i>
+                        <i class="bi bi-star-fill grey"></i>
+                      </div>
+                      <div class="social-reviews">40 reviews</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-end">
+                  <div class="row sliders">
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 50%; background-color: #ffc935"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">5/30</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 10%; background-color: #58d0ff"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">4/2</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 25%; background-color: #8479ff"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">3/8</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 5%; background-color: #ff8c23"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">2/0</div>
+                    </div>
+                    <div class="col-4 mb-3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 5%; background-color: #ff6161"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <div class="social-rating">1/0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Social Media Handles -->
+      </div>
+      <!-- ! Main Container -->
+    </div>
+
+    <!-- ? Bootstrap Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ? Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
